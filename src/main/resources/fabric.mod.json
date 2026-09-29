@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "chestminecartsgeneratechunks",
+  "version": "${version}",
+  "name": "Chest Minecarts Generate Chunks",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chestminecartsgeneratechunks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.fisch37.chestminecartsgeneratechunks.ChestMinecartsGenerateChunks"
+    ]
+  },
+  "mixins": [
+    "chestminecartsgeneratechunks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
