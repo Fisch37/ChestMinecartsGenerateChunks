@@ -22,9 +22,9 @@ public class AbstractMinecartMixin {
                 && myself.level() instanceof ServerLevel level
         ) {
             level.getChunkSource().addTicketWithRadius(
-                    TicketType.ENDER_PEARL,
+                    ChestMinecartsGenerateChunks.MINECART_TICKET,
                     myself.chunkPosition(),
-                    2
+                    ChestMinecartsGenerateChunks.LOAD_RADIUS
             );
         }
     }

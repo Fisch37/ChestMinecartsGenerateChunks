@@ -4,7 +4,8 @@
   "package": "de.fisch37.chestminecartsgeneratechunks.mixins",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "AbstractMinecartMixin"
+    "AbstractMinecartMixin",
+    "TicketTypeMixin"
   ],
   "client": [
   ],
