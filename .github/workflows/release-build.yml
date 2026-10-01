@@ -7,7 +7,9 @@
 
 name: Java CI with Gradle
 
-on: [release]
+on:
+  release:
+    types: created
 
 jobs:
   build:
@@ -35,6 +37,6 @@ jobs:
     - name: Attach to release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TARGET_REF: ${{ github.ref }}
+        TARGET_REF: ${{ github.ref_name }}
       run:
         gh release upload $TARGET_REF build/libs/*
